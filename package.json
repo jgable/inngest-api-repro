@@ -4,11 +4,14 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "dev:inngest": "inngest-cli dev -u http://localhost:3000/api/inngest --no-discovery",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "inngest": "3.21.0",
+    "inngest-cli": "0.29.3",
     "react": "^18",
     "react-dom": "^18",
     "next": "14.2.5"
